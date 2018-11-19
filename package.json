@@ -18,8 +18,8 @@
     "stopdb": "pg_ctl -D /usr/local/var/postgres stop",
     "droptest": "psql -c 'DROP DATABASE IF EXISTS vanilla_test' && psql -c 'CREATE DATABASE vanilla_test'",
     "resettest": "npm run droptest && ./node_modules/.bin/sequelize db:migrate --env test && ./node_modules/.bin/sequelize db:seed:all --env test",
-    "test:run": "export NODE_ENV=test && sequelize db:migrate:undo:all && sequelize db:migrate && sequelize db:seed:all && ./node_modules/.bin/mocha -R spec 'tests/**/**.test.js'",
-    "coverage": "istanbul cover _mocha -- -R spec 'tests/**/**/**/**test.js'"
+    "test:run": "export NODE_ENV=test && sequelize db:migrate:undo:all && sequelize db:migrate && sequelize db:seed:all && ./node_modules/.bin/mocha -R spec 'tests/**/**.test.js' --exit",
+    "coverage": "istanbul cover _mocha -- -R spec 'tests/**/**.test.js' --console summary --exit"
   },
   "author": "Ezra Keddell",
   "license": "MIT",
@@ -46,7 +46,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "faker": "^4.1.0",
-    "istanbul": "^0.4.5",
+    "istanbul": "^1.0.0-alpha.2",
     "mocha": "^5.2.0",
     "mocha-lcov-reporter": "^1.3.0",
     "nodemon": "^1.17.4",

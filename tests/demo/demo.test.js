@@ -160,7 +160,6 @@ describe('[POST] /api/v1/demos Testing', () => {
       .expect('Content-Type', /json/)
       .expect(422)
       .end((err, res) => {
-        console.log('******', res.body);
         expect(res.body).to.have.property('error');
         expect(res.body).to.have.deep.property('error', 'A demoTitle is required.');
         done();

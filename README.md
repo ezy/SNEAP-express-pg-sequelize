@@ -1,10 +1,8 @@
-# Postnado - Part 2!!
+# SNEAP - ExpressJS NodeJS API server with Postgres & Sequelize
 
-*The sequel(ize) to '(Postgres)sive' - coming to a repo near you this summer*
+A super simple Node JS API demo built with Express, for PostgreSQL using Sequelize ORM. Has a folder structure that follows sequelize-cli conventions with a pod structure for routes and controllers.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
-This is the sort of folder structure that makes your dev team go daaaaaammmmmmmmnnnn son! It's a super simple Node JS API demo built with Express, for PostgreSQL using Sequelize ORM. Has a folder structure that follows sequelize-cli conventions with a pod structure for routes and controllers.
 
 **Stack**
 

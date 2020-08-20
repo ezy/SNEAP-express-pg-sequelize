@@ -24,7 +24,7 @@
   "author": "Ezra Keddell",
   "license": "MIT",
   "dependencies": {
-    "bcrypt": "^3.0.2",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.15.2",
     "change-case": "^3.0.2",
     "compression": "^1.6.2",
